@@ -1,9 +1,15 @@
+<h1>Eventos</h1>
+<button [disabled]="btnDisable">Enviar</button>
+<button (click)="toggleButton()">Toggle Button</button>
+<p>Edad : {{person.age}}</p>
+<button (click)="Age()">Age ++</button>
+
+<hr/>
 <!-- property Binding: Es una forma de controlar dinamamicamente algunos atributos html para que estos sean renderizados apartir una string,
 variable o atributo de un objeto de la capa logica. -->
 <!-- Los corchetes [ ] (square brakets) hacen que Angular evalúe el lado derecho de la asignación como una expresión dinámica. Sin los corchetes,
 Angular trata el lado derecho como un literal de cadena y establece la propiedad en ese valor estático. -->
 <!-- es preferible usar el String interpolation en los casos que los datos sean Strings, para valores numericos es mejor usar Property Binding -->
-
 <h1>propiedades</h1>
 <button [disabled]="btnDisable">Enviar</button>
 <input type="text" [value]="person.name">

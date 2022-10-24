@@ -16,4 +16,10 @@ export class AppComponent {
     age: 34,
     avatar: 'https://yt3.ggpht.com/K9zEiBjtQowbvmr5yEb7VDU2FNDQd07Kc3X0wXxaigP9ibKDlMFHtIYOuA9zDRKgLy5bGWhJ=s900-c-k-c0x00ffffff-no-rj'
   }
+  toggleButton(){
+    this.btnDisable = !this.btnDisable;
+  }
+  Age(){
+    this.person.age += 1;
+  }
 }
