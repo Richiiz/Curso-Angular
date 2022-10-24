@@ -8,6 +8,15 @@ Para vincular un elemento html a un evento, debemos indicar el nombre del evento
 <button (click)="toggleButton()">Toggle Button</button>
 <p>Edad : {{person.age}}</p>
 <button (click)="Age()">Age ++</button>
+<!-- otros eventos que se pueden escuchar  -->
+<div class="box"(scroll)="OnScroll($event)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia qui nesciunt tempora incidunt? Adipisci odit hic voluptas enim voluptate, voluptatibus consequatur laudantium numquam distinctio, ipsum exercitationem maxime autem quidem delectus.
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia qui nesciunt tempora incidunt? Adipisci odit hic voluptas enim voluptate, voluptatibus consequatur laudantium numquam distinctio, ipsum exercitationem maxime autem quidem delectus.
+</div>
+<p>Nombre {{ person.name }}</p>
+<input type="text" [value]="person.name"(keyup)="changeName($event)"/>
+
+
+
 
 <hr/>
 <!-- property Binding: Es una forma de controlar dinamamicamente algunos atributos html para que estos sean renderizados apartir una string,
