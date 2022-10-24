@@ -1,8 +1,21 @@
+<!-- property Binding: Es una forma de controlar dinamamicamente algunos atributos html para que estos sean renderizados apartir una string,
+variable o atributo de un objeto de la capa logica. -->
+<!-- Los corchetes [ ] (square brakets) hacen que Angular evalúe el lado derecho de la asignación como una expresión dinámica. Sin los corchetes,
+Angular trata el lado derecho como un literal de cadena y establece la propiedad en ese valor estático. -->
+<!-- es preferible usar el String interpolation en los casos que los datos sean Strings, para valores numericos es mejor usar Property Binding -->
+
+<h1>propiedades</h1>
+<button [disabled]="btnDisable">Enviar</button>
+<input type="text" [value]="person.name">
+<progress max="100" [value]="person.age"></progress>
+<img width="100" [src]="person.avatar" alt="">
+
+
+
+<hr/>
 <!-- String interpolation es la manera de enviar datos desde nuestro componente hacia la vista. Utilizando el doble símbolo de llaves {{ }}, o también conocidos
 como brackets, puedes imprimir el valor de una variable, realizar operaciones matemáticas o hacer el llamado a una función dentro del código HTML. -->
 <!-- estos valores deben se publicos para que puedan ser enviados, de otra forma, no se podran enviar -->
-
-
 <h1>Hola mundo</h1>
 <h2> {{ 'hola mundo, '.repeat(5) }} </h2>
 <p>3 + 3 = {{ 3 + 3 }}</p>
