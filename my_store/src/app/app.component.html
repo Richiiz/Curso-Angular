@@ -1,3 +1,16 @@
+<!-- El atributo ngModel permite el intercambio de datos de forma bidireccional entre el componente y la vista. Lo que suceda en el componente,
+se verá reflejado en la vista. Lo que se suceda en la vista, inmediatamente impactará en el componente. -->
+<h1>NgModel</h1>
+<p>Nombre {{ person.name }}</p>
+<input type="text" required #nameInput="ngModel" [(ngModel)]="person.name" />
+<p>Valid: {{ nameInput.valid }}</p>
+<p>age {{person.age}}</p>
+<input type="number" max="22" min="15" required #ageInput="ngModel" [(ngModel)]="person.age" />
+<p>Valid: {{ ageInput.valid }}</p>
+
+
+
+<hr/>
 <!-- El Event Binding le permite escuchar y responder a las acciones del usuario, como pulsaciones de teclas, movimientos del mouse,
 clics y toques (Atributos HTML y propiedades DOM).
 
