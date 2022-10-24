@@ -1,3 +1,30 @@
+<h1>*ngFor</h1>
+<input type="text" required [(ngModel)]="NewName" />
+<button (click)="AddName()">add name</button>
+<ul>
+  <li *ngIf="names.length === 0 "> no hay nombres D:</li>
+  <!-- el array de abajo "names" tiene que estar en los components.ts -->
+  <li *ngFor="let name of names; index as i">
+    {{i}}  {{ name }}
+    <button (click)="deleteName(i)">Delete</button>
+  </li>
+</ul>
+
+<!-- <hr/>
+ejemplo hecho por mi
+<h3>ejemplo de nueva lista</h3>
+<input type="text" required [(ngModel)]="lista" />
+<button (click)="anadir()">añadir nueva cosita :D</button>
+<ul>
+  <li>
+    <li *ngFor="let cosa of NewLista; index as j">
+      {{j}}  {{ cosa }}
+      <button (click)="borrar(j)">manda alv :D</button>
+  </li>
+</ul> -->
+
+
+<hr/>
 <!-- El condicional “If” es un “If” en Javascript, en Java, en PHP, en Python o en cualquier lenguaje. Angular posibilita utilizar este condicionante
 embebido en el HTML para mostrar o no un elemento. Su sintaxis es algo particular, está compuesta por un asterisco seguido de las iniciales características de Angular “ng” y la palabra “If”.
 
@@ -17,7 +44,6 @@ llamada <ng-template> con una Variable de Template, comenzando con #, para hacer
 
 Si la condición del If no se cumple, seguido de punto y coma, se coloca la sentencia else haciendo referencia a templateElse, que es el nombre
 de la variable del template a mostrar en su lugar. -->
-
 <h1>*ngIF</h1>
 <input type="text" required [(ngModel)]="person.name" />
 <p *ngIf="person.name === 'richi'">My Contenido</p>
@@ -40,6 +66,7 @@ se verá reflejado en la vista. Lo que se suceda en la vista, inmediatamente imp
 
 
 <hr/>
+<!-- ------------------------------------------------ -->
 <!-- El Event Binding le permite escuchar y responder a las acciones del usuario, como pulsaciones de teclas, movimientos del mouse,
 clics y toques (Atributos HTML y propiedades DOM).
 
