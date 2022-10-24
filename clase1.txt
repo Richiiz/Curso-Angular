@@ -1,0 +1,25 @@
+Angular es un framework de JavaScript que posee todo un ecosistema de tecnologías con módulos y paquetes listos para utilizar para el desarrollo web del lado del cliente.
+
+Angular por defecto no posee estilos, pero se pueden agregar de forma muy sencilla. La parte visual de la aplicación es muy importante porque es lo que más le interesa al usuario final. En ese sentido, Angular Material es un framework de estilos para tus aplicaciones.
+
+Desarrollado por Google, Angular es más que un framework, es una plataforma que nos da la posibilidad de desarrollar aplicaciones web como aplicaciones mobile. Además, es un framework de estructura que nos va a brindar funcionalidades para extender el template de nuestra aplicación.
+
+Ventajas de Angular
+Algunas ventajas que trae Angular son:
+
+Mayor estructura y control del proyecto.
+Gran comunidad que ayuda con cualquier problema.
+SPA
+Rapidez
+
+
+
+Qué características tiene Angular
+Estas son las principales características de este framework:
+
+Está respaldado y desarrollado por Google.
+Es multi-plataforma para desarrollo de aplicaciones web, móviles o de escritorio.
+Tiene excelente experiencia de desarrollo gracias a TypeScript y a herramientas de detección de errores y autocompletado de código propias de Angular.
+Posee una gran comunidad mundial donde sea que te encuentre en todo el mundo.
+
+
