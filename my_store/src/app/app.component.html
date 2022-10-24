@@ -1,3 +1,49 @@
+<h1>*ngFor Objs</h1>
+<div>
+  <!-- el ngFor solo fucnioan con objetos que puedan iterarze, es decir, con arrays :D  -->
+  <div *ngFor="let product of products">
+    <img width="250" [src]="product.image" alt="image">
+    <h2>prezio y cuanto cuesta:{{product.price}}</h2>
+    <p>{{product.name}}</p>
+  </div>
+</div>
+
+
+
+
+<hr/>
+<!-- A lo igual que con un If, Angular permite iterar un array de números, de cadenas de caracteres o de objetos usando “*ngFor”.Si tienes en tu componente un array de datos: -->
+<!-- export class AppComponent {
+  myArray: string[] = [
+    'Platzi',
+    'es',
+    'genial!'
+  ];
+} -->
+
+<!-- Puedes mostrar cada elemento iterando el array en un elemento HTML:
+
+"let str of myArray">
+        {{ str }}
+    </li>
+> -->
+
+<!-- Índice de iteración
+ngFor también cuenta con un índice con el número de iteraciones. Puedes acceder a este número agregando al ngFor index as i de la siguiente manera:
+
+"let str of myArray; index as i">
+        {{ i }}. {{ str }}
+    </li>
+>
+
+Cada iteración contiene una variable i con el índice que le corresponde. Iniciando desde cero, da como resultado:
+
+<ul>
+    <li>0. Platzili>
+    <li>1. esli>
+    <li>2. genial!li>
+ul> -->
+
 <h1>*ngFor</h1>
 <input type="text" required [(ngModel)]="NewName" />
 <button (click)="AddName()">add name</button>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from './product.model';
 
 @Component({
   selector: 'app-root',
@@ -19,8 +20,50 @@ export class AppComponent {
 
   names: string[] = ['nico', 'juli', 'elfa'];
   NewName  = '';
-  NewLista: string[] = ['papel', 'pasra', 'papitas'];
-  lista = '';
+  // como buena practica se recomienda tipar los arrays para evitar errores
+  // tipar es indicarle que tipo de elemento va a recibir un objeto, en este caso el array
+  // en este caso se tipa con "product[]"
+  // mirar archivo product.model.ts que esta en la carpeta app
+  products: Product[] = [
+    {
+      name: 'EL mejor juguete',
+      price: 565,
+      image: './assets/images/si.jpg',
+      // aqui category es el unico elemento de los demas, se le pone a "category" un "?" para hacerlo opcional
+      // mirar archivo product.model.ts que esta en la carpeta app
+      category: 'SI',
+    },
+    {
+      name: 'Bicicleta casi nueva',
+      price: 356,
+      image: './assets/images/bici.jpg'
+    },
+    {
+      name: 'Colleción de albumnes',
+      price: 34,
+      image: './assets/images/album.jpg'
+    },
+    {
+      name: 'Mis libros',
+      price: 23,
+      image: './assets/images/libro.jpg'
+    },
+    {
+      name: 'Casa para perro',
+      price: 34,
+      image: './assets/images/casa.png'
+    },
+    {
+      name: 'Gafas',
+      price: 3434,
+      image: './assets/images/gafas.jpg'
+    }
+  ]
+
+
+  //ejemplo de *ngFor hecho por mi
+  // NewLista: string[] = ['papel', 'pasra', 'papitas'];
+  // lista = '';
 
   toggleButton(){
     this.btnDisable = !this.btnDisable;
@@ -44,11 +87,12 @@ export class AppComponent {
   deleteName(index: number){
     this.names.splice(index, 1);
   }
-  anadir(){
-    this.NewLista.push(this.lista);
-    this.NewLista
-  }
-  borrar(index: number){
-    this.NewLista.splice(index, 1)
-  }
+  //ejemplos del ngFor hecho por mi
+  // anadir(){
+  //   this.NewLista.push(this.lista);
+  //   this.NewLista
+  // }
+  // borrar(index: number){
+  //   this.NewLista.splice(index, 1)
+  // }
 }
