@@ -23,6 +23,14 @@ widthImg = 10
 
   names: string[] = ['nico', 'juli', 'elfa'];
   NewName  = '';
+
+  box = {
+    width: 10,
+    height: 100,
+    background: 'red'
+  };
+
+
   // como buena practica se recomienda tipar los arrays para evitar errores
   // tipar es indicarle que tipo de elemento va a recibir un objeto, en este caso el array
   // en este caso se tipa con "product[]"
