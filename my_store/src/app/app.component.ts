@@ -7,6 +7,7 @@ import { Product } from './product.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+// clase puesta en la class binding
 widthImg = 10
 
   name = 'Richiiz';

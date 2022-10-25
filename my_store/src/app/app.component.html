@@ -1,3 +1,11 @@
+<!-- Class binding
+La versatilidad de Angular te permite agregar o quitar clases y estilos a tus elementos HTML a partir de condicionantes. Así como anteriormente utilizaste los
+corchetes [] para bindear atributos como el [src] de una imagen o el [href] de un enlace, puedes bindear clases para que Angular las agregue o quite dinámicamente
+si se cumple una condición de la siguiente manera:
+
+<div [class.active-color]="isActive">
+</div> -->
+
 <h1>Class & Style</h1>
 <input type="text" required #nameInput2="ngModel" [(ngModel)]="person.name"/>
 <p class="message-error" [class.invalid]="nameInput2.invalid">
@@ -5,6 +13,14 @@
 </p>
 <label>Nombre</label>
 <input type="text" required #nameInput3="ngModel" [(ngModel)]="person.name"/>
+
+<!-- Class binding
+La versatilidad de Angular te permite agregar o quitar clases y estilos a tus elementos HTML a partir de condicionantes. Así como anteriormente utilizaste
+los corchetes [] para bindear atributos como el [src] de una imagen o el [href] de un enlace, puedes bindear clases para que Angular las agregue o quite
+dinámicamente si se cumple una condición de la siguiente manera:
+
+<div [class.active-color]="isActive"></div> -->
+
 <p [style.font-style]="nameInput3.invalid ? 'italic' : 'normal'" >texto texto texto</p>
 <div class="styles">
     <div>
