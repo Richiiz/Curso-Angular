@@ -15,6 +15,17 @@ widthImg = 10
   img = 'https://yt3.ggpht.com/K9zEiBjtQowbvmr5yEb7VDU2FNDQd07Kc3X0wXxaigP9ibKDlMFHtIYOuA9zDRKgLy5bGWhJ=s900-c-k-c0x00ffffff-no-rj';
   btnDisable= true;
 
+  register = {
+    name: '',
+    email: '',
+    password: ''
+  }
+  registro = {
+    nom: '',
+    gmail: '',
+    contr: ''
+  }
+
   person = {
     name: 'nicolas el vergas',
     age: 34,
@@ -106,4 +117,9 @@ widthImg = 10
   // borrar(index: number){
   //   this.NewLista.splice(index, 1)
   // }
+
+  onRegister(){
+    console.log(this.register)
+  }
+
 }

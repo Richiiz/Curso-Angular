@@ -1,3 +1,47 @@
+<div class="FormFirst">
+  <h1>mi formulario bien chidito :D</h1>
+  <div class="form-group">
+    <label class="labelform" for="nombre">Nombre: </label>
+    <input class="estiloInput" type="text" name="name" required id='name' [(ngModel)]="registro.nom">
+  </div>
+  <div class="form-group">
+    <label class="labelform" for="nombre">Gmail: </label>
+    <input class="estiloInput" type="text" name="name" required id='name' [(ngModel)]="registro.gmail">
+  </div>
+  <div class="form-group">
+    <label class="labelform" for="nombre">Contraseña: </label>
+    <input class="estiloInput" type="text" name="name" required id='name' [(ngModel)]="registro.contr">
+
+    <p>Aun te falta poner tu nombre</p>
+    <p>Aun te falta poner tu gmail</p>
+    <p>aun te falta poner tu contraseña, queda entre nosotros papu ;D</p>
+  </div>
+</div>
+<hr/>
+
+
+
+<h1>Formulario</h1>
+<form (ngSubmit)="onRegister()" #myForm="ngForm">
+  <div class="input-group">
+    <label for="nombre">Nombre</label>
+    <input type="text" name="name" required id='name' [(ngModel)]="register.name">
+    <p>Mensaje de error</p>
+  </div>
+  <div class="input-group">
+    <label for="email">Gmail</label>
+    <input type="email" name="email" required id='email' [(ngModel)]="register.email">
+    <p>Mensaje de error</p>
+  </div>
+  <div class="input-group">
+    <label for="contraseña">Contraseña</label>
+    <input type="password" name="password" required id='password' [(ngModel)]="register.password">
+    <p>Mensaje de error</p>
+  </div>
+  <!-- se le debe poner un type al boton para que no haga que el boton mande el formulario, siempre debe tener type -->
+  <button [disabled]="myForm.invalid" type="submit">Registrar</button>
+</form>
+
 <hr/>
 
 

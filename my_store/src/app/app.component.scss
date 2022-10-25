@@ -21,6 +21,36 @@
   }
 }
 
+// estilo de mi formulario
+.FormFirst{
+  background-color: #1c1c1c;
+  color: antiquewhite;
+}
+
+
+
+.form-group{
+  padding-bottom: 20px;
+  text-align: center
+
+}
+.labelform{
+  display: block;
+  padding-right: 10%;
+  padding-bottom: 10px;
+
+
+}
+.estiloInput{
+  background: transparent;
+  padding: auto;
+  border: 3px solid white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: aliceblue;
+}
+
 .message-error{
   background: red;
   color: white;
