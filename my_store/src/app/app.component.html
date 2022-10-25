@@ -30,10 +30,10 @@
 <hr/>
 
 <h1>*ngFor Objs</h1>
-<div>
+<div class="products--grid">
   <!-- el ngFor solo fucnioan con objetos que puedan iterarze, es decir, con arrays :D  -->
   <div *ngFor="let product of products">
-    <img width="250" [src]="product.image" alt="image">
+    <img [src]="product.image" alt="image">
     <h2>prezio y cuanto cuesta:{{product.price}}</h2>
     <p>{{product.name}}</p>
   </div>
@@ -186,4 +186,4 @@ como brackets, puedes imprimir el valor de una variable, realizar operaciones ma
 <h2> {{ 'hola mundo, '.repeat(5) }} </h2>
 <p>3 + 3 = {{ 3 + 3 }}</p>
 <h3>hola, soy  {{ name }} y tengo  {{ age }}</h3>
-<img src={{img}} alt="image">
+<img width="200" src={{img}} alt="image">
